@@ -1,0 +1,105 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Vyzva {
+  id                   String   @id @default(cuid())
+  nazev                String
+  zdroj                String
+  zdrojUrl             String
+  oblasti              String[]
+  alokace              BigInt?
+  minCastka            BigInt?
+  maxCastka            BigInt?
+  miraSpolufinancovani Int?
+  deadline             DateTime?
+  datumVyhlaseni       DateTime?
+  datumUkonceni        DateTime?
+  popis                String?
+  plnyText             String?
+  zdrojDokumentace     String?
+  status               String   @default("otevrena")
+  typZaznamu           String   @default("vyzva")
+  hash                 String   @unique
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  
+  ulozene              UlozenaVyzva[]
+  notifikace           Notifikace[]
+}
+
+model Zadatel {
+  id               String   @id @default(cuid())
+  nazev            String
+  ico              String?
+  pravniForma      String
+  kraj             String
+  okres            String?
+  obec             String?
+  specifickaOblast String[]
+  sektory          String[]
+  klicovaSlova     String[]
+  velikost         String
+  email            String?
+  telefon          String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  
+  ulozene          UlozenaVyzva[]
+  notifikace       Notifikace[]
+  nastaveni        Nastaveni?
+}
+
+model UlozenaVyzva {
+  id        String   @id @default(cuid())
+  zadatel   Zadatel  @relation(fields: [zadatelId], references: [id])
+  zadatelId String
+  vyzva     Vyzva    @relation(fields: [vyzvaId], references: [id])
+  vyzvaId   String
+  relevance Int?
+  poznamka  String?
+  createdAt DateTime @default(now())
+  
+  @@unique([zadatelId, vyzvaId])
+}
+
+model Notifikace {
+  id        String   @id @default(cuid())
+  zadatel   Zadatel  @relation(fields: [zadatelId], references: [id])
+  zadatelId String
+  vyzva     Vyzva?   @relation(fields: [vyzvaId], references: [id])
+  vyzvaId   String?
+  typ       String
+  predmet   String
+  obsah     String
+  odeslano  Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Nastaveni {
+  id              String   @id @default(cuid())
+  zadatel         Zadatel  @relation(fields: [zadatelId], references: [id])
+  zadatelId       String   @unique
+  emailNotifikace Boolean  @default(true)
+  smsNotifikace   Boolean  @default(false)
+  pushNotifikace  Boolean  @default(false)
+  frekvence       String   @default("denne")
+  minRelevance    Int      @default(60)
+  dniPredDeadline Int      @default(14)
+  sledovaneZdroje String[] @default(["SZIF", "SFZP", "EAGRI"])
+}
+
+model ScraperLog {
+  id                 String   @id @default(cuid())
+  zdroj              String
+  status             String
+  message            String?
+  vyzevPridano       Int      @default(0)
+  vyzevAktualizovano Int      @default(0)
+  startedAt          DateTime
+  endedAt            DateTime @default(now())
+}

@@ -1,0 +1,743 @@
+{
+    "knownSymbols": {
+        "Vyzva": [
+            {
+                "name": "Vyzva",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "interface",
+                "isDefault": false
+            }
+        ],
+        "vyzvy": [
+            {
+                "name": "vyzvy",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "getVyzvaById": [
+            {
+                "name": "getVyzvaById",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "formatDeadline": [
+            {
+                "name": "formatDeadline",
+                "module": "@/lib/mockData",
+                "isDefault": false
+            },
+            {
+                "name": "formatDeadline",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "daysUntilDeadline": [
+            {
+                "name": "daysUntilDeadline",
+                "module": "@/lib/mockData",
+                "isDefault": false
+            },
+            {
+                "name": "daysUntilDeadline",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "statusLabels": [
+            {
+                "name": "statusLabels",
+                "module": "@/lib/types",
+                "isDefault": false
+            },
+            {
+                "name": "statusLabels",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "zdrojeList": [
+            {
+                "name": "zdrojeList",
+                "module": "@/lib/mockData",
+                "isDefault": false
+            },
+            {
+                "name": "zdrojeList",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "oblastiList": [
+            {
+                "name": "oblastiList",
+                "module": "@/lib/mockData",
+                "isDefault": false
+            },
+            {
+                "name": "oblastiList",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/mockData.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "startScheduler": [
+            {
+                "name": "startScheduler",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/cron/scheduler.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "cron": [
+            {
+                "name": "cron",
+                "module": "node-cron",
+                "isDefault": true
+            }
+        ],
+        "prisma": [
+            {
+                "name": "prisma",
+                "module": "@/lib/db",
+                "isDefault": false
+            },
+            {
+                "name": "prisma",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/db.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "PrismaClient": [
+            {
+                "name": "PrismaClient",
+                "module": "@prisma/client",
+                "isDefault": false
+            }
+        ],
+        "PrismaPg": [
+            {
+                "name": "PrismaPg",
+                "module": "@prisma/adapter-pg",
+                "isDefault": false
+            }
+        ],
+        "Pool": [
+            {
+                "name": "Pool",
+                "module": "pg",
+                "isDefault": false
+            }
+        ],
+        "SzifMasScraper": [
+            {
+                "name": "SzifMasScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/szifMasScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "cheerio": [
+            {
+                "name": "cheerio",
+                "module": "cheerio",
+                "isDefault": true,
+                "asDefinition": "* as cheerio"
+            }
+        ],
+        "GrantovyDiarScraper": [
+            {
+                "name": "GrantovyDiarScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/grantovyDiarScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "NpoScraper": [
+            {
+                "name": "NpoScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/npoScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "MasKrkonoseScraper": [
+            {
+                "name": "MasKrkonoseScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/masKrkonoseScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "SfzpScraper": [
+            {
+                "name": "SfzpScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/sfzpScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "async": [
+            {
+                "name": "async",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/routes.d.ts",
+                "isDefault": true
+            }
+        ],
+        "CrrScraper": [
+            {
+                "name": "CrrScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/crrScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "ApiAgenturaScraper": [
+            {
+                "name": "ApiAgenturaScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/apiAgenturaScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "OptakScraper": [
+            {
+                "name": "OptakScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/optakScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "detectOblastiFromText": [
+            {
+                "name": "detectOblastiFromText",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/utils.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "parseStatus": [
+            {
+                "name": "parseStatus",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/utils.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "delay": [
+            {
+                "name": "delay",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/utils.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "axios": [
+            {
+                "name": "axios",
+                "module": "axios",
+                "isDefault": true
+            }
+        ],
+        "{ type AxiosRequestConfig": [
+            {
+                "name": "{ type AxiosRequestConfig",
+                "module": "axios",
+                "isDefault": true
+            }
+        ],
+        "SzifScraper": [
+            {
+                "name": "SzifScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/szifScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "MmrCestovniRuchScraper": [
+            {
+                "name": "MmrCestovniRuchScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/mmrCestovniRuchScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "HarmonogramScraper": [
+            {
+                "name": "HarmonogramScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/harmonogramScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "ScrapedVyzva": [
+            {
+                "name": "ScrapedVyzva",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/baseScraper.ts",
+                "type": "interface",
+                "isDefault": false
+            }
+        ],
+        "BaseScraper": [
+            {
+                "name": "BaseScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/baseScraper.ts",
+                "type": "abstract class",
+                "isDefault": false
+            }
+        ],
+        "crypto": [
+            {
+                "name": "crypto",
+                "module": "crypto",
+                "isDefault": true
+            }
+        ],
+        "DotaceEuScraper": [
+            {
+                "name": "DotaceEuScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/dotaceEuScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "EagriScraper": [
+            {
+                "name": "EagriScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/eagriScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "OpzpScraper": [
+            {
+                "name": "OpzpScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/opzpScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "AopkScraper": [
+            {
+                "name": "AopkScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/aopkScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "InterregCzPlScraper": [
+            {
+                "name": "InterregCzPlScraper",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/scrapers/interregCzPlScraper.ts",
+                "type": "class",
+                "isDefault": false
+            }
+        ],
+        "VyzvaFromAPI": [
+            {
+                "name": "VyzvaFromAPI",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "interface",
+                "isDefault": false
+            }
+        ],
+        "statusMap": [
+            {
+                "name": "statusMap",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "mapDbStatus": [
+            {
+                "name": "mapDbStatus",
+                "module": "@/lib/types",
+                "isDefault": false
+            },
+            {
+                "name": "mapDbStatus",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "formatCastka": [
+            {
+                "name": "formatCastka",
+                "module": "@/lib/types",
+                "isDefault": false
+            },
+            {
+                "name": "formatCastka",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "serializeVyzva": [
+            {
+                "name": "serializeVyzva",
+                "module": "@/lib/types",
+                "isDefault": false
+            },
+            {
+                "name": "serializeVyzva",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/types.ts",
+                "type": "function",
+                "isDefault": false
+            }
+        ],
+        "DEFAULT_ZADATEL_ID": [
+            {
+                "name": "DEFAULT_ZADATEL_ID",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/lib/defaultZadatel.ts",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "GrantTable": [
+            {
+                "name": "GrantTable",
+                "module": "@/components/GrantTable",
+                "isDefault": true
+            },
+            {
+                "name": "GrantTable",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/GrantTable.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "Link": [
+            {
+                "name": "Link",
+                "module": "next/link",
+                "isDefault": true
+            }
+        ],
+        "Sidebar": [
+            {
+                "name": "Sidebar",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/Sidebar.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "usePathname": [
+            {
+                "name": "usePathname",
+                "module": "next/navigation",
+                "isDefault": false
+            }
+        ],
+        "useState": [
+            {
+                "name": "useState",
+                "module": "react",
+                "isDefault": false
+            }
+        ],
+        "useEffect": [
+            {
+                "name": "useEffect",
+                "module": "react",
+                "isDefault": false
+            }
+        ],
+        "PageLayout": [
+            {
+                "name": "PageLayout",
+                "module": "@/components/PageLayout",
+                "isDefault": true
+            },
+            {
+                "name": "PageLayout",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/PageLayout.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "DeadlineTimeline": [
+            {
+                "name": "DeadlineTimeline",
+                "module": "@/components/DeadlineTimeline",
+                "isDefault": true
+            },
+            {
+                "name": "DeadlineTimeline",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/DeadlineTimeline.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "StatsCards": [
+            {
+                "name": "StatsCards",
+                "module": "@/components/StatsCards",
+                "isDefault": true
+            },
+            {
+                "name": "StatsCards",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/StatsCards.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "CategoryChart": [
+            {
+                "name": "CategoryChart",
+                "module": "@/components/CategoryChart",
+                "isDefault": true
+            },
+            {
+                "name": "CategoryChart",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/components/CategoryChart.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "UlozenePage": [
+            {
+                "name": "UlozenePage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/ulozene/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "type VyzvaFromAPI": [
+            {
+                "name": "type VyzvaFromAPI",
+                "module": "@/lib/types",
+                "isDefault": false
+            }
+        ],
+        "NextResponse": [
+            {
+                "name": "NextResponse",
+                "module": "next/server",
+                "isDefault": false
+            }
+        ],
+        "NextRequest": [
+            {
+                "name": "NextRequest",
+                "module": "next/server",
+                "isDefault": false
+            }
+        ],
+        "getOrCreateDefaultZadatel": [
+            {
+                "name": "getOrCreateDefaultZadatel",
+                "module": "@/lib/defaultZadatel",
+                "isDefault": false
+            }
+        ],
+        "runAllScrapers": [
+            {
+                "name": "runAllScrapers",
+                "module": "@/lib/scrapers",
+                "isDefault": false
+            }
+        ],
+        "metadata": [
+            {
+                "name": "metadata",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/layout.tsx",
+                "type": "const",
+                "isDefault": false
+            }
+        ],
+        "RootLayout": [
+            {
+                "name": "RootLayout",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/layout.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "type { Metadata": [
+            {
+                "name": "type { Metadata",
+                "module": "next",
+                "isDefault": true
+            }
+        ],
+        "SpeedInsights": [
+            {
+                "name": "SpeedInsights",
+                "module": "@vercel/speed-insights/next",
+                "isDefault": false
+            }
+        ],
+        "Analytics": [
+            {
+                "name": "Analytics",
+                "module": "@vercel/analytics/next",
+                "isDefault": false
+            }
+        ],
+        "NastaveniPage": [
+            {
+                "name": "NastaveniPage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/nastaveni/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "useCallback": [
+            {
+                "name": "useCallback",
+                "module": "react",
+                "isDefault": false
+            }
+        ],
+        "useMemo": [
+            {
+                "name": "useMemo",
+                "module": "react",
+                "isDefault": false
+            }
+        ],
+        "VyzvyPage": [
+            {
+                "name": "VyzvyPage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/vyzvy/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "VyzvaDetailPage": [
+            {
+                "name": "VyzvaDetailPage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/vyzvy/[id]/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "useParams": [
+            {
+                "name": "useParams",
+                "module": "next/navigation",
+                "isDefault": false
+            }
+        ],
+        "NotifikacePage": [
+            {
+                "name": "NotifikacePage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/notifikace/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "ProfilPage": [
+            {
+                "name": "ProfilPage",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/src/app/profil/page.tsx",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "nextConfig": [
+            {
+                "name": "nextConfig",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/next.config.ts",
+                "isDefault": true
+            }
+        ],
+        "type { NextConfig": [
+            {
+                "name": "type { NextConfig",
+                "module": "next",
+                "isDefault": true
+            }
+        ],
+        "config": [
+            {
+                "name": "config",
+                "module": "dotenv",
+                "isDefault": false
+            }
+        ],
+        "defineConfig": [
+            {
+                "name": "defineConfig",
+                "module": "@prisma/config",
+                "isDefault": false
+            },
+            {
+                "name": "defineConfig",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/prisma.config.ts",
+                "isDefault": true
+            }
+        ],
+        "the": [
+            {
+                "name": "the",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/validator.ts",
+                "isDefault": false
+            }
+        ],
+        "type { ResolvingMetadata": [
+            {
+                "name": "type { ResolvingMetadata",
+                "module": "next/types.js",
+                "isDefault": true
+            }
+        ],
+        "ResolvingViewport": [
+            {
+                "name": "ResolvingViewport",
+                "module": "next/types.js",
+                "isDefault": true
+            }
+        ],
+        "type { NextRequest": [
+            {
+                "name": "type { NextRequest",
+                "module": "next/server.js",
+                "isDefault": true
+            }
+        ],
+        "ParamsOf": [
+            {
+                "name": "ParamsOf",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/routes.d.ts",
+                "type": "type",
+                "isDefault": false
+            }
+        ],
+        "type": [
+            {
+                "name": "type",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/routes.d.ts",
+                "isDefault": false
+            }
+        ],
+        "Page": [
+            {
+                "name": "Page",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/routes.d.ts",
+                "type": "function",
+                "isDefault": true
+            }
+        ],
+        "Layout": [
+            {
+                "name": "Layout",
+                "path": "/Users/ichtyl2/dotacni-hlidac/dotace/.next/types/routes.d.ts",
+                "type": "function",
+                "isDefault": true
+            }
+        ]
+    }
+}
